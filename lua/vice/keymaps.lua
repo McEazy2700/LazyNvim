@@ -1,0 +1,11 @@
+local set_key = vim.keymap.set
+set_key("t", "<C-\\>", "<C-\\><C-n>")
+set_key("i", "jk", "<Esc>")
+set_key("n", "<C-h>", "<C-w>h")
+set_key("n", "<c-k>", "<c-w>k")
+set_key("n", "<C-l>", "<C-w>l")
+set_key("n", "<C-j>", "<C-w>j")
+set_key("v", "K", ":m '<-2<CR>gv=gv")
+set_key("v", "J", ":m '>+1<CR>gv=gv")
+set_key("n", "<S-l>", "<cmd>BufferNext<CR>")
+set_key("n", "<S-h>", "<cmd>BufferPrevious<CR>")
