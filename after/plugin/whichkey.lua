@@ -11,7 +11,7 @@ wk.register({
         vim.cmd(term)
       end)
     end, "[T]erminal"
-    }
+    },
   },
   s = {
     name = "[S]earch",
@@ -36,5 +36,10 @@ wk.register({
       l = {"<cmd>BufferCloseBuffersRight<cr>", "All to the right"},
       h = {"<cmd>BufferCloseBuffersLeft<cr>", "All to the left"}
     }
+  },
+  M = {
+    name = "Markdown",
+    p = {"<cmd>PeekOpen<cr>", "[P]eek [M]arkdown"},
+    c = {"<cmd>PeekClose<cr>", "[Close] [M]arkdown Peak"}
   }
 }, { prefix = "<leader>" })
