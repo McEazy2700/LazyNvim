@@ -89,5 +89,13 @@ require("lazy").setup({
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
     },
-    { "catppuccin/nvim", name = "catppuccin" }
+    { "catppuccin/nvim", name = "catppuccin" },
+    { 'projekt0n/github-nvim-theme', version = 'v0.0.7' },
+    {
+        "Pocco81/auto-save.nvim",
+        config = function()
+            require("auto-save").setup {}
+        end,
+    }
+    -- { "christoomey/vim-tmux-navigator", lazy = false }
 })

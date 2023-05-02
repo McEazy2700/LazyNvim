@@ -33,5 +33,16 @@ wk.register({
         h = {"<cmd>ToggleTerm 2 direction=horizontal<cr>", "[t]erminal [h]orizontal"},
         v = {"<cmd>ToggleTerm 3 size=50 direction=vertical<cr>", "[t]erminal [v]ertical"},
         a = {"<cmd>ToggleTermToggleAll<cr>", "[t]erminal toggle [a]ll"}
+    },
+    a = {
+        name = "Activate/deactivate",
+        s = {function ()
+            local spell = vim.opt.spell:get()
+            if spell then
+                vim.opt.spell = false
+            else
+                vim.opt.spell = true
+            end
+        end, "[a]ctivate/deactivate [s]pell"}
     }
 }, { prefix = "<leader>" })

@@ -25,3 +25,4 @@ vim.g.mapleader = " ";
 
 vim.opt.spelllang = "en_us";
 vim.opt.spell = true;
+vim.g.tmux_navigator_no_mappings = 1

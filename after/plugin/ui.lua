@@ -28,7 +28,7 @@ vim.g.transparent_groups = vim.list_extend(
     return v.hl_group
   end, vim.tbl_values(require('bufferline.config').highlights))
 )
-vim.cmd.colorscheme("tokyonight-night")
+vim.cmd.colorscheme("github_dark_default") --tokyonight-night
 -- vim.g.transparent_enabled = true
 vim.opt.termguicolors = true
 
