@@ -1,8 +1,11 @@
 local vim = vim;
 local lsp = require('lsp-zero').preset({})
+local lsp_status = require('lsp-status')
+lsp_status.register_progress()
 
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({buffer = bufnr})
+    lsp_status.on_attach(client)
     local opts = { buffer = true }
 
     vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)

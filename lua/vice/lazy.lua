@@ -96,6 +96,7 @@ require("lazy").setup({
         config = function()
             require("auto-save").setup {}
         end,
-    }
+    },
+    { "nvim-lua/lsp-status.nvim" }
     -- { "christoomey/vim-tmux-navigator", lazy = false }
 })

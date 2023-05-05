@@ -24,5 +24,5 @@ vim.opt.colorcolumn = "80";
 vim.g.mapleader = " ";
 
 vim.opt.spelllang = "en_us";
-vim.opt.spell = true;
+vim.opt.spell = false;
 vim.g.tmux_navigator_no_mappings = 1
